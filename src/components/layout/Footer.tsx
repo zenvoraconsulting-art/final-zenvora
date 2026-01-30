@@ -117,12 +117,22 @@ const Footer = () => {
               © {new Date().getFullYear()} ZENVORA CONSULTING. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="#" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors">
+              <a 
+                href="/documents/privacy-policy.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-primary-foreground/60 hover:text-gold transition-colors"
+              >
                 Privacy Policy
-              </Link>
-              <Link to="#" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors">
+              </a>
+              <a 
+                href="/documents/terms-and-conditions.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-primary-foreground/60 hover:text-gold transition-colors"
+              >
                 Terms of Service
-              </Link>
+              </a>
             </div>
           </div>
         </div>
