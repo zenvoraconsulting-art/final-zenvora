@@ -18,14 +18,20 @@ const HeroSection = () => {
         <source src={heroBgVideo} type="video/mp4" />
       </video>
       
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-90" />
-
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gold rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold rounded-full blur-3xl" />
+      {/* Professional Dark Overlay with Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-navy to-primary opacity-95" />
+      
+      {/* Subtle Gold Accent Glow */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold/8 rounded-full blur-[100px]" />
       </div>
+      
+      {/* Professional Grid Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
+        backgroundSize: '50px 50px'
+      }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
