@@ -4,7 +4,6 @@ import SectionHeading from "@/components/common/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Eye, Phone } from "lucide-react";
-import umeshPhoto from "@/assets/team/umesh-farkade.jpg";
 
 const teamMembers = [
   {
@@ -12,35 +11,30 @@ const teamMembers = [
     role: "Founder",
     phone: "+91 88733 04211",
     image: "JP",
-    photo: null,
   },
   {
     name: "Umesh Farkade",
     role: "Executor Head",
     phone: "+91 82258 11142",
     image: "UF",
-    photo: umeshPhoto,
   },
   {
     name: "Ranjeet Chaurasiya",
     role: "Social Media Manager",
     phone: "+91 73248 40640",
     image: "RC",
-    photo: null,
   },
   {
     name: "Ankit Kumar",
     role: "Developer Team Head",
     phone: "+91 62079 88050",
     image: "AK",
-    photo: null,
   },
   {
     name: "Ishan Sharma",
     role: "Developer Team Head",
     phone: "+91 88396 24380",
     image: "IS",
-    photo: null,
   },
 ];
 
@@ -191,37 +185,24 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="group rounded-xl bg-card border border-border overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group p-6 rounded-xl bg-card border border-border text-center hover:shadow-lg hover:bg-primary hover:border-gold/30 transition-all duration-300"
               >
-                {/* Photo Section - Top */}
-                <div className="w-full h-48 bg-muted flex items-center justify-center overflow-hidden">
-                  {member.photo ? (
-                    <img 
-                      src={member.photo} 
-                      alt={member.name}
-                      className="w-full h-full object-cover object-top"
-                    />
-                  ) : (
-                    <span className="text-5xl font-bold text-primary">
-                      {member.image}
-                    </span>
-                  )}
+                <div className="w-24 h-24 mx-auto rounded-full bg-primary group-hover:bg-gold flex items-center justify-center mb-4 transition-colors duration-300">
+                  <span className="text-2xl font-bold text-primary-foreground group-hover:text-secondary-foreground transition-colors duration-300">
+                    {member.image}
+                  </span>
                 </div>
-                
-                {/* Info Section - Bottom */}
-                <div className="p-6 text-left">
-                  <h3 className="font-serif text-xl font-bold text-foreground mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-gold text-sm mb-3">{member.role}</p>
-                  <a
-                    href={`tel:${member.phone.replace(/\s/g, "")}`}
-                    className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold transition-colors"
-                  >
-                    <Phone className="w-4 h-4" />
-                    {member.phone}
-                  </a>
-                </div>
+                <h3 className="font-serif text-xl font-semibold text-foreground group-hover:text-primary-foreground mb-1 transition-colors duration-300">
+                  {member.name}
+                </h3>
+                <p className="text-gold group-hover:text-gold text-sm mb-4 transition-colors duration-300">{member.role}</p>
+                <a
+                  href={`tel:${member.phone.replace(/\s/g, "")}`}
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary-foreground/70 hover:text-gold transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  {member.phone}
+                </a>
               </motion.div>
             ))}
           </div>
