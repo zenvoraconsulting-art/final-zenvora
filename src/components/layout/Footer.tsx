@@ -27,20 +27,35 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src={zenvoraLogo} alt="Zenvora Consulting" className="h-12 w-auto" />
+              <img
+                src={zenvoraLogo}
+                alt="Zenvora Consulting"
+                className="h-12 w-auto"
+              />
               <span className="font-serif text-xl font-bold">
                 ZENVORA<span className="text-gold"> CONSULTING</span>
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Complete Consulting Solutions for Business, Startups & Academics. 
-              We help you achieve your goals with expert guidance and end-to-end support.
+              Complete Consulting Solutions for Business, Startups & Academics.
+              We help you achieve your goals with expert guidance and end-to-end
+              support.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/profile.php?id=61586726681665" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors">
+              <a
+                href="https://www.facebook.com/profile.php?id=61586726681665"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors"
+              >
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://www.instagram.com/zenvoraconsulting?igsh=aWdtOG9tcDBwaXM1" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors">
+              <a
+                href="https://www.instagram.com/zenvoraconsulting?igsh=aWdtOG9tcDBwaXM1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors"
+              >
                 <Instagram className="w-4 h-4" />
               </a>
             </div>
@@ -48,12 +63,14 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-6">Our Services</h4>
+            <h4 className="font-serif text-lg font-semibold mb-6">
+              Our Services
+            </h4>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
-                  <Link 
-                    to="/services" 
+                  <Link
+                    to="/services"
                     className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
                   >
                     {service}
@@ -65,12 +82,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-6">Quick Links</h4>
+            <h4 className="font-serif text-lg font-semibold mb-6">
+              Quick Links
+            </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
-                  <Link 
-                    to={link.path} 
+                  <Link
+                    to={link.path}
                     className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
                   >
                     {link.name}
@@ -82,20 +101,28 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-6">Contact Us</h4>
+            <h4 className="font-serif text-lg font-semibold mb-6">
+              Contact Us
+            </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+918225811142" className="text-sm text-primary-foreground/70 hover:text-gold transition-colors block">
+                  <a
+                    href="tel:+918225811142"
+                    className="text-sm text-primary-foreground/70 hover:text-gold transition-colors block"
+                  >
                     +91 82258 11142
                   </a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <a href="mailto:info@zenvoraconsulting.com" className="text-sm text-primary-foreground/70 hover:text-gold transition-colors">
-                  info@zenvoraconsulting.com
+                <a
+                  href="mailto:@zenvoraconsulting.com"
+                  className="text-sm text-primary-foreground/70 hover:text-gold transition-colors"
+                >
+                  zenvoraconsulting.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -114,17 +141,18 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © {new Date().getFullYear()} ZENVORA CONSULTING. All rights reserved.
+              © {new Date().getFullYear()} ZENVORA CONSULTING. All rights
+              reserved.
             </p>
             <div className="flex gap-6">
-              <a 
-                href="/documents/privacy-policy.pdf" 
+              <a
+                href="/documents/privacy-policy.pdf"
                 className="text-sm text-primary-foreground/60 hover:text-gold transition-colors"
               >
                 Privacy Policy
               </a>
-              <a 
-                href="/documents/terms-and-conditions.pdf" 
+              <a
+                href="/documents/terms-and-conditions.pdf"
                 className="text-sm text-primary-foreground/60 hover:text-gold transition-colors"
               >
                 Terms of Service
