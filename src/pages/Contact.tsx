@@ -107,7 +107,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                     <a href="tel:+918225811142" className="text-muted-foreground hover:text-gold transition-colors block">
-                      +91 82258 11142
+                      +91 97082 34479
                     </a>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
                     <a
-                      href="https://wa.me/918225811142"
+                      href="https://wa.me/919708234479"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-gold transition-colors"
@@ -135,8 +135,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:info@zenvoraconsulting.com" className="text-muted-foreground hover:text-gold transition-colors">
-                      info@zenvoraconsulting.com
+                    <a href="mailto:zenvoraconsulting@gmail.com" className="text-muted-foreground hover:text-gold transition-colors">
+                      zenvoraconsulting@gmail.com
                     </a>
                   </div>
                 </div>
