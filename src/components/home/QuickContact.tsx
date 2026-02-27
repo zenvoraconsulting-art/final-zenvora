@@ -33,7 +33,7 @@ const QuickContact = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
           >
             <a
-              href="tel:+918225811142"
+              href="tel:+919708234479"
               className="flex flex-col items-center p-6 rounded-xl bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-colors border border-primary-foreground/10"
             >
               <Phone className="w-8 h-8 text-gold mb-3" />
@@ -41,7 +41,7 @@ const QuickContact = () => {
               <span className="text-primary-foreground font-medium">+91 82258 11142</span>
             </a>
             <a
-              href="https://wa.me/918225811142"
+              href="https://wa.me/919708234479"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 rounded-xl bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-colors border border-primary-foreground/10"
@@ -51,12 +51,12 @@ const QuickContact = () => {
               <span className="text-primary-foreground font-medium">Chat with Us</span>
             </a>
             <a
-              href="mailto:info@zenvoraconsulting.com"
+              href="mailto:zenvoraconsulting@gmail.com"
               className="flex flex-col items-center p-6 rounded-xl bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-colors border border-primary-foreground/10"
             >
               <Mail className="w-8 h-8 text-gold mb-3" />
               <span className="text-sm text-primary-foreground/60 mb-1">Email</span>
-              <span className="text-primary-foreground font-medium">info@zenvoraconsulting.com</span>
+              <span className="text-primary-foreground font-medium">zenvoraconsulting@gmail.com</span>
             </a>
           </motion.div>
 
