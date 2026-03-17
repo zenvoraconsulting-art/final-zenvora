@@ -13,12 +13,12 @@ import {
   Twitter,
   Facebook,
 } from "lucide-react";
-import teamDemoPhoto from "@/assets/team-demo.png";
+import teamDemoPhoto from "@/assets/team-demo.jpg";
 import teamDemoPhoto1 from "@/assets/team1.jpeg";
 import teamDemoPhoto2 from "@/assets/team2.jpeg";
 import teamDemoPhoto3 from "@/assets/team3.jpeg";
 import teamDemoPhoto4 from "@/assets/team4.png";
-import teamDemoPhoto5 from "@/assets/ranjit.jpg.jpeg";
+import teamDemoPhoto5 from "@/assets/ranjit.jpeg";
 
 const teamMembers = [
   {
@@ -30,20 +30,24 @@ const teamMembers = [
     description:
       "Visionary leader with expertise in business strategy and consulting.",
     social: {
-      linkedin: "#",
+      linkedin:
+        "https://www.linkedin.com/in/jay-prakash-upadhyay-29535327b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      instagram: "#",
       twitter: "#",
       facebook: "#",
     },
   },
   {
     name: "Mohammad Alim",
-    role: "Senior Advisor",
-    phone: "",
+    role: "Founder",
+    phone: "+91 887xx-52xxx",
     initials: "MA",
     photo: teamDemoPhoto,
-    description: "Business Strategy & Startup Solutions.",
+    description:
+      "Visionary leader with expertise in business strategy and consulting.",
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/mohammad-alim-444325132",
+      instagram: "#",
       twitter: "#",
       facebook: "#",
     },
@@ -51,43 +55,48 @@ const teamMembers = [
   {
     name: "Umesh Farkade",
     role: "Executor Head",
-    phone: "",
+    phone: "+91 82258 11142",
     initials: "UF",
     photo: teamDemoPhoto4,
     description:
       "Operations expert ensuring seamless project execution and delivery.",
-    social: { linkedin: "#", twitter: "#", facebook: "#" },
+    social: {
+      linkedin: "https://www.linkedin.com/in/umesh-farkade/",
+      instagram: "#",
+      twitter: "#",
+      facebook: "#",
+    },
   },
   {
     name: "Ranjeet Chaurasiya",
     role: "Social Media Manager",
-    phone: "",
+    phone: "+91 73248 40640",
     initials: "RC",
     photo: teamDemoPhoto5,
     description:
       "Creative strategist driving brand engagement across digital platforms.",
-    social: { linkedin: "#", twitter: "#", facebook: "#" },
+    social: { linkedin: "#", instagram: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Ankit Kumar",
     role: "Developer Team Head",
-    phone: "",
+    phone: "+91 62079 88050",
     initials: "AK",
     photo: teamDemoPhoto3,
     description:
       "Full-stack developer leading innovative web and app solutions.",
-    social: { linkedin: "#", twitter: "#", facebook: "#" },
+    social: { linkedin: "#", instagram: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Ishan Sharma",
     role: "Developer Team Head",
-    phone: "",
+    phone: "+91 88396 24380",
     initials: "IS",
     photo: teamDemoPhoto2,
     description:
       "Tech enthusiast specializing in scalable architecture and modern frameworks.",
     social: {
-      linkedin: "#",
+      linkedin: "www.linkedin.com/in/ishan-sharma-b9634a2bb",
       instagram: "#",
       twitter: "#",
       facebook: "#",
