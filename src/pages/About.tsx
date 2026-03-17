@@ -13,7 +13,7 @@ import {
   Twitter,
   Facebook,
 } from "lucide-react";
-import teamDemoPhoto from "@/assets/team-demo.jpg";
+import teamDemoPhoto from "@/assets/team-demo.png";
 import teamDemoPhoto1 from "@/assets/team1.jpeg";
 import teamDemoPhoto2 from "@/assets/team2.jpeg";
 import teamDemoPhoto3 from "@/assets/team3.jpeg";
