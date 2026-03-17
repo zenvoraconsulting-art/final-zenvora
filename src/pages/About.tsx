@@ -3,38 +3,95 @@ import Layout from "@/components/layout/Layout";
 import SectionHeading from "@/components/common/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, Eye, Phone } from "lucide-react";
+import {
+  ArrowRight,
+  Target,
+  Eye,
+  Phone,
+  Linkedin,
+  Instagram,
+  Twitter,
+  Facebook,
+} from "lucide-react";
+import teamDemoPhoto from "@/assets/team-demo.png";
+import teamDemoPhoto1 from "@/assets/team1.jpeg";
+import teamDemoPhoto2 from "@/assets/team2.jpeg";
+import teamDemoPhoto3 from "@/assets/team3.jpeg";
+import teamDemoPhoto4 from "@/assets/team4.png";
+import teamDemoPhoto5 from "@/assets/ranjit.jpg.jpeg";
 
 const teamMembers = [
   {
     name: "Jay Prakash Upadhyay",
     role: "Founder",
     phone: "+91 88733 04211",
-    image: "JP",
+    initials: "JP",
+    photo: teamDemoPhoto1,
+    description:
+      "Visionary leader with expertise in business strategy and consulting.",
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      facebook: "#",
+    },
+  },
+  {
+    name: "Mohammad Alim",
+    role: "Senior Advisor",
+    phone: "",
+    initials: "MA",
+    photo: teamDemoPhoto,
+    description: "Business Strategy & Startup Solutions.",
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      facebook: "#",
+    },
   },
   {
     name: "Umesh Farkade",
     role: "Executor Head",
-    phone: "+91 82258 11142",
-    image: "UF",
+    phone: "",
+    initials: "UF",
+    photo: teamDemoPhoto4,
+    description:
+      "Operations expert ensuring seamless project execution and delivery.",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Ranjeet Chaurasiya",
     role: "Social Media Manager",
-    phone: "+91 73248 40640",
-    image: "RC",
+    phone: "",
+    initials: "RC",
+    photo: teamDemoPhoto5,
+    description:
+      "Creative strategist driving brand engagement across digital platforms.",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Ankit Kumar",
     role: "Developer Team Head",
-    phone: "+91 62079 88050",
-    image: "AK",
+    phone: "",
+    initials: "AK",
+    photo: teamDemoPhoto3,
+    description:
+      "Full-stack developer leading innovative web and app solutions.",
+    social: { linkedin: "#", twitter: "#", facebook: "#" },
   },
   {
     name: "Ishan Sharma",
     role: "Developer Team Head",
-    phone: "+91 88396 24380",
-    image: "IS",
+    phone: "",
+    initials: "IS",
+    photo: teamDemoPhoto2,
+    description:
+      "Tech enthusiast specializing in scalable architecture and modern frameworks.",
+    social: {
+      linkedin: "#",
+      instagram: "#",
+      twitter: "#",
+      facebook: "#",
+    },
   },
 ];
 
@@ -57,7 +114,8 @@ const About = () => {
               Your Trusted Partner in Success
             </h1>
             <p className="text-lg text-primary-foreground/70">
-              We are a team of passionate professionals dedicated to helping businesses and individuals achieve their goals.
+              We are a team of passionate professionals dedicated to helping
+              businesses and individuals achieve their goals.
             </p>
           </motion.div>
         </div>
@@ -80,10 +138,18 @@ const About = () => {
                 Building Success Stories Since 2022
               </h2>
               <p className="text-muted-foreground mb-4">
-                ZENVORA CONSULTING was founded with a simple mission: to provide comprehensive consulting solutions that empower businesses and individuals to reach their full potential. In just 3 years, we have grown into a trusted partner for 50+ clients across various industries.
+                ZENVORA CONSULTING was founded with a simple mission: to provide
+                comprehensive consulting solutions that empower businesses and
+                individuals to reach their full potential. In just 3 years, we
+                have grown into a trusted partner for 50+ clients across various
+                industries.
               </p>
               <p className="text-muted-foreground mb-6">
-                Our team brings together expertise from technology, research, marketing, and business consulting to deliver holistic solutions tailored to your unique needs. We believe in building long-term relationships based on trust, transparency, and tangible results.
+                Our team brings together expertise from technology, research,
+                marketing, and business consulting to deliver holistic solutions
+                tailored to your unique needs. We believe in building long-term
+                relationships based on trust, transparency, and tangible
+                results.
               </p>
               <Button
                 className="gap-2 bg-gold hover:bg-gold-dark text-secondary-foreground"
@@ -142,7 +208,11 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-muted-foreground">
-                To provide innovative, reliable, and affordable consulting solutions that help our clients achieve their business and academic objectives. We are committed to delivering excellence through personalized service, cutting-edge technology, and deep industry expertise.
+                To provide innovative, reliable, and affordable consulting
+                solutions that help our clients achieve their business and
+                academic objectives. We are committed to delivering excellence
+                through personalized service, cutting-edge technology, and deep
+                industry expertise.
               </p>
             </motion.div>
 
@@ -160,7 +230,10 @@ const About = () => {
                 Our Vision
               </h3>
               <p className="text-muted-foreground">
-                To become the most trusted consulting partner for businesses and academics worldwide. We envision a future where every organization and individual has access to expert guidance that transforms their ideas into successful ventures.
+                To become the most trusted consulting partner for businesses and
+                academics worldwide. We envision a future where every
+                organization and individual has access to expert guidance that
+                transforms their ideas into successful ventures.
               </p>
             </motion.div>
           </div>
@@ -185,24 +258,83 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="group p-6 rounded-xl bg-card border border-border text-center hover:shadow-lg hover:bg-primary hover:border-gold/30 transition-all duration-300"
+                className="group rounded-xl bg-card border border-border overflow-hidden hover:shadow-lg hover:border-gold/30 transition-all duration-300"
               >
-                <div className="w-24 h-24 mx-auto rounded-full bg-primary group-hover:bg-gold flex items-center justify-center mb-4 transition-colors duration-300">
-                  <span className="text-2xl font-bold text-primary-foreground group-hover:text-secondary-foreground transition-colors duration-300">
-                    {member.image}
-                  </span>
+                {/* Photo Frame */}
+                <div className="w-full aspect-[4/3] bg-muted overflow-hidden">
+                  {member.photo ? (
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-primary flex items-center justify-center">
+                      <span className="text-5xl font-bold text-primary-foreground">
+                        {member.initials}
+                      </span>
+                    </div>
+                  )}
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground group-hover:text-primary-foreground mb-1 transition-colors duration-300">
-                  {member.name}
-                </h3>
-                <p className="text-gold group-hover:text-gold text-sm mb-4 transition-colors duration-300">{member.role}</p>
-                <a
-                  href={`tel:${member.phone.replace(/\s/g, "")}`}
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary-foreground/70 hover:text-gold transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  {member.phone}
-                </a>
+
+                {/* Info Section */}
+                <div className="p-6 text-center">
+                  <h3 className="font-serif text-xl font-semibold text-foreground mb-1 transition-colors duration-300">
+                    {member.name}
+                  </h3>
+                  <p className="text-gold text-sm font-medium mb-2">
+                    {member.role}
+                  </p>
+
+                  <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                    {member.description}
+                  </p>
+
+                  {/* Social Media Icons */}
+                  <div className="flex justify-center gap-3 mb-4">
+                    <a
+                      href={member.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-[#0A66C2] hover:scale-110 transition-all"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                    </a>
+                    <a
+                      href={member.social.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-[#E4405F] hover:scale-110 transition-all"
+                    >
+                      <Instagram className="w-4 h-4" />
+                    </a>
+                    <a
+                      href={member.social.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-[#1DA1F2] hover:scale-110 transition-all"
+                    >
+                      <Twitter className="w-4 h-4" />
+                    </a>
+                    <a
+                      href={member.social.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-[#1877F2] hover:scale-110 transition-all"
+                    >
+                      <Facebook className="w-4 h-4" />
+                    </a>
+                  </div>
+
+                  {/* Phone */}
+                  <a
+                    href={`tel:${member.phone.replace(/\s/g, "")}`}
+                    className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold transition-colors"
+                  >
+                    <Phone className="w-4 h-4" />
+                    {member.phone}
+                  </a>
+                </div>
               </motion.div>
             ))}
           </div>
