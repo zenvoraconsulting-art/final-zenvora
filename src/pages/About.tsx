@@ -39,12 +39,12 @@ const teamMembers = [
   },
   {
     name: "Mohammad Alim",
-    role: "Founder",
-    phone: "+91 887xx-52xxx",
+    role: "Senior Advisor",
+    phone: "+91 88718-11928",
     initials: "MA",
     photo: teamDemoPhoto,
     description:
-      "Visionary leader with expertise in business strategy and consulting.",
+      "Bussiness Strategy & Startup Solutions",
     social: {
       linkedin: "https://www.linkedin.com/in/mohammad-alim-444325132",
       instagram: "#",
